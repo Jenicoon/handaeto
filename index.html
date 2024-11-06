@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="kr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>한국대학생토론연합</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <meta name="google-site-verification" content="w1VCVbad3F_cW6z1S_tCEwOJRi8bJr05h4n1wVzrEEg" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="hero d-flex align-items-center justify-content-center">
+        <img src="logo.png" alt="토론 이미지" class="logo rounded">
+    </div>
+
+    <div class="container mt-5 text-center">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="clock.png" class="card-img-top mx-auto d-block" alt="timer" style="max-width: 40.9%; height: auto;">
+                    <div class="card-body">
+                        <h5 class="card-title">타이머</h5>
+                        <button class="btn_1 btn-lg" onclick="location.href='test/debate_main.html'">교류전</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-text">
+        <p>한국대학생토론연합
+            <a href="https://www.instagram.com/univ_debate_official/" target="_blank">
+                <img src="instagram.png" alt="Instagram" style="max-width: 30px; height: auto; margin-left: 20px;">
+            </a>
+            @univ_debate_official<br><br>
+            <hr>
+            <span>v0.0 (2024-11-06)</span>
+            <button id="updatelog">업데이트 로그(클릭)</button><br>
+            사이트 문의: dndckssla12@hanyang.ac.kr<br>
+            Copyright 2024. 한국대학생토론연합 All rights reserved.
+        </p>
+
+        <div id="openlog" style="display: none;">
+            <span id="closelog" style="cursor: pointer; float: right; font-size: 20px;">&times;</span>
+            <p>Hello</p>
+        </div>
+        <div id="overlaylog" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 999;"></div>
+    </div>
+</body>
+
+</html>

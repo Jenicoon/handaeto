@@ -1,0 +1,140 @@
+.hero {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+    background: linear-gradient(to right,#918f8f, #979ea8, #ffffff, #979ea8, #918f8f);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+body {
+    background-image: url('배경.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+.logo {
+    max-width: 30%;
+    height: auto;
+}
+
+
+@font-face {
+    font-family: "chosunsm";
+    src: url("ChosunSm.TTF");
+    font-display: swap;
+  }
+
+.display-4 {
+    font-family: 'chosunsm', serif !important;
+}
+
+.col-md-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    transition: transform 0.3s ease;
+    height: 90%;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.92;
+    margin: 0px;
+    margin-bottom: 30px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-body {
+    flex-grow: 1;
+}
+
+.btn_1 {
+    background-color: rgb(65, 101, 249);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    font-size: 1.0rem; 
+    border-radius: 10px;
+}
+
+.btn_1:hover{
+    background-color: rgb(140, 154, 156);
+}
+
+.btn_2 {
+    background-color: rgb(138, 138, 138);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.0rem; 
+    border-radius: 10px;
+}
+
+.btn_2:hover{
+    background-color: rgb(86, 86, 86);
+}
+
+.calendar {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 100px 100px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    opacity: 0.92;
+}
+
+
+#footer-text {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #ffffff;
+    background-color: rgb(109, 107, 107);
+    padding: 10px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid rgb(198, 198, 198);
+    margin: 10px 0;
+}
+
+#updatelog {
+    background: none;
+    border: none;
+    color: white;
+    cursor:pointer;
+}
+
+#openlog {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: #343434;
+    border: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+}
