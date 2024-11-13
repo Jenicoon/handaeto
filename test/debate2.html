@@ -18,12 +18,12 @@
     <div class="container">
         <div class="time pro" id="time_pro">
             <div class="title">찬성</div>
-            <div class="time-info">총 남은 시간<br><span id="total_time_pro">20:00</span></div>
+            <div class="time-info">총 남은 시간<br><span id="total_time_pro">10:00</span></div>
             <div class="time-info">발언 시간<br><span id="speaking_time_pro">2:00</span></div>
         </div>
         <div class="time con" id="time_con">
             <div class="title">반대</div>
-            <div class="time-info">총 남은 시간<br><span id="total_time_con">20:00</span></div>
+            <div class="time-info">총 남은 시간<br><span id="total_time_con">10:00</span></div>
             <div class="time-info">발언 시간<br><span id="speaking_time_con">2:00</span></div>
         </div>
     </div>
@@ -35,8 +35,8 @@
     <button onclick="next()">다음</button>
 
     <script>
-        let timePro = 20 * 60;
-        let timeCon = 20 * 60;
+        let timePro = 10 * 60;
+        let timeCon = 10 * 60;
         let speakingTimePro = 120;
         let speakingTimeCon = 120;
         let timerInterval;
@@ -68,6 +68,7 @@
             if (runningCon) {
                 stopTimer();
             }
+            speakingTimeCon = (timeCon <= 120) ? timeCon : 120;
             runningPro = true;
             document.getElementById('btn_pro').disabled = true;
             timerInterval = setInterval(() => {
@@ -94,6 +95,7 @@
             if (runningPro) {
                 stopTimer();
             }
+            speakingTimePro = (timePro <= 120) ? timePro : 120;
             runningCon = true;
             document.getElementById('btn_con').disabled = true;
             timerInterval = setInterval(() => {
@@ -151,8 +153,8 @@
 
         function resetTimer() {
             stopTimer();
-            timePro = 20 * 60;
-            timeCon = 20 * 60;
+            timePro = 10 * 60;
+            timeCon = 10 * 60;
             speakingTimePro = 120;
             speakingTimeCon = 120;
             updateDisplay();
