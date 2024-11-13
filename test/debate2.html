@@ -132,22 +132,7 @@
             runningCon = false;
             document.getElementById('btn_pro').disabled = false;
             document.getElementById('btn_con').disabled = false;
-            if (timePro > 120 && timeCon > 120) {
-                speakingTimePro = 120;
-                speakingTimeCon = 120;
-            }
-            else if (timePro > 120 && timeCon < 120) {
-                speakingTimePro = 120;
-                speakingTimeCon = timeCon
-            }
-            else if (timePro < 120 && timeCon > 120) {
-                speakingTimeCon = 120;
-                speakingTimePro = timePro
-            }
-            else {
-                speakingTimePro = timePro;
-                speakingTimeCon = timeCon;
-            }
+            
             updateDisplay();
         }
 
