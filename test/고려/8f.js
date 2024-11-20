@@ -1,7 +1,7 @@
 let timePro = 8 * 60;
 let timeCon = 8 * 60;
-let speakingTimePro = 60;
-let speakingTimeCon = 60;
+let speakingTimePro = 120;
+let speakingTimeCon = 120;
 let timerInterval;
 let runningPro = false;
 let runningCon = false;
@@ -31,7 +31,7 @@ function startPro() {
     if (runningCon) {
         stopTimer();
     }
-    speakingTimeCon = (timeCon <= 60) ? timeCon : 60;
+    speakingTimeCon = (timeCon <= 120) ? timeCon : 120;
     runningPro = true;
     document.getElementById('btn_pro').disabled = true;
     timerInterval = setInterval(() => {
@@ -58,7 +58,7 @@ function startCon() {
     if (runningPro) {
         stopTimer();
     }
-    speakingTimePro = (timePro <= 60) ? timePro : 60;
+    speakingTimePro = (timePro <= 120) ? timePro : 120;
     runningCon = true;
     document.getElementById('btn_con').disabled = true;
     timerInterval = setInterval(() => {
@@ -102,8 +102,8 @@ function resetTimer() {
     stopTimer();
     timePro = 8 * 60;
     timeCon = 8 * 60;
-    speakingTimePro = 60;
-    speakingTimeCon = 60;
+    speakingTimePro = 120;
+    speakingTimeCon = 120;
     updateDisplay();
 }
 
