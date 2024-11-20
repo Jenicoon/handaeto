@@ -5,26 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>자유토론 타이머</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="8fc.js"></script>
+    <script src="10f.js"></script>
 </head>
 <body>
     <audio id="bell" src="bell.mp3" preload="auto"></audio>
     
     <div class="header">
-        <img src="../../학교로고/성균관.png" alt="Logo" class="logo">
-        <h1>자유토론</h1>
+        <img src="../../학교로고/연세.png" alt="Logo" class="logo">
+        <h1>2부 자유토론</h1>
     </div>
     
 
     <div class="container">
         <div class="time pro" id="time_pro">
             <div class="title">찬성</div>
-            <div class="time-info">총 남은 시간<br><span id="total_time_pro">8:00</span></div>
+            <div class="time-info">총 남은 시간<br><span id="total_time_pro">10:00</span></div>
             <div class="time-info">발언 시간<br><span id="speaking_time_pro">2:00</span></div>
         </div>
         <div class="time con" id="time_con">
             <div class="title">반대</div>
-            <div class="time-info">총 남은 시간<br><span id="total_time_con">8:00</span></div>
+            <div class="time-info">총 남은 시간<br><span id="total_time_con">10:00</span></div>
             <div class="time-info">발언 시간<br><span id="speaking_time_con">2:00</span></div>
         </div>
     </div>
@@ -35,21 +35,22 @@
     <button onclick="resetTimer()">초기화</button>
     <button onclick="next()">다음</button>
 
+    <script>
+        function previous() {
+            window.location.href = 'debate3.html';
+        }
+
+        function next() {
+            window.location.href = 'debate5-1.html';
+        }
+
+        updateDisplay();
+    </script>
+
     <div id="footer-text">
         <p>1. 왼쪽 방향키 = 찬성 / 오른쪽 방향키 = 반대</p>
         <p>1. 양 측 총 남은 시간이 모두 소모되면 종소리가 울립니다.</p>
         <p>2. 양 측 발언 시간이 모두 소모되면 종소리가 울립니다.</p>
     </div>
-
-    <script>
-        function previous() {
-            window.location.href = 'ceda8.html';
-        }
-    
-        function next() {
-            window.location.href = 'ceda10.html';
-        }
-    </script>
-
 </body>
 </html>

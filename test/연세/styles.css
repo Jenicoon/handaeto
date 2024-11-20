@@ -76,16 +76,20 @@ h1 {
     margin: 4px 0;
 }
 
-.반토막 {
+.통상정책 {
     background-color: #fcffa0;
 }
 
-.CEDA {
+.국회의장배 {
     background-color: #b8b8b8;
 }
 
+.중선관위식 {
+    background-color: #f88d8d;
+}
+
 .title {
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 20px;
     font-weight: bold;
 }
@@ -121,6 +125,22 @@ button:disabled {
     color: #333;
     font-weight: bold;
 }
+#popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 300px;
+    width: 500px;
+}
+
 .timer1_pro {
     background: -webkit-linear-gradient(left, skyBlue 50%, #eee 50%);
     border-radius: 100%;
@@ -128,7 +148,7 @@ button:disabled {
     position: relative;
     width: 250px;
     animation-name: time;
-    animation-duration: 60s;
+    animation-duration: 90s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-play-state: paused;
@@ -140,48 +160,60 @@ button:disabled {
     position: relative;
     width: 250px;
     animation-name: time;
-    animation-duration: 60s;
+    animation-duration: 90s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-play-state: paused;
 }
-.timer2_neu {
+.timer3_neu {
     background: -webkit-linear-gradient(left, rgb(178, 178, 178) 50%, #eee 50%);
     border-radius: 100%;
     height: 250px;
     position: relative;
     width: 250px;
     animation-name: time;
-    animation-duration: 120s;
+    animation-duration: 180s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-play-state: paused;
 }
-.timer2_pro {
+.timer49_neu {
+    background: -webkit-linear-gradient(left, rgb(178, 178, 178) 50%, #eee 50%);
+    border-radius: 100%;
+    height: 250px;
+    position: relative;
+    width: 250px;
+    animation-name: time;
+    animation-duration: 2940s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+.timer6_pro {
     background: -webkit-linear-gradient(left, skyBlue 50%, #eee 50%);
     border-radius: 100%;
     height: 250px;
     position: relative;
     width: 250px;
     animation-name: time;
-    animation-duration: 120s;
+    animation-duration: 360s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-play-state: paused;
 }
-.timer2_con {
+.timer6_con {
     background: -webkit-linear-gradient(left, rgb(250, 86, 86) 50%, #eee 50%);
     border-radius: 100%;
     height: 250px;
     position: relative;
     width: 250px;
     animation-name: time;
-    animation-duration: 120s;
+    animation-duration: 360s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-play-state: paused;
 }
-.timer_pro {
+.timer3_pro {
     background: -webkit-linear-gradient(left, skyBlue 50%, #eee 50%);
     border-radius: 100%;
     height: 250px;
@@ -193,7 +225,7 @@ button:disabled {
     animation-iteration-count: infinite;
     animation-play-state: paused;
 }
-.timer_con {
+.timer3_con {
     background: -webkit-linear-gradient(left, rgb(250, 86, 86) 50%, #eee 50%);
     border-radius: 100%;
     height: 250px;
@@ -205,7 +237,7 @@ button:disabled {
     animation-iteration-count: infinite;
     animation-play-state: paused;
 }
-.timer_pro_ceda {
+.timer4_pro {
     background: -webkit-linear-gradient(left, skyBlue 50%, #eee 50%);
     border-radius: 100%;
     height: 250px;
@@ -217,7 +249,7 @@ button:disabled {
     animation-iteration-count: infinite;
     animation-play-state: paused;
 }
-.timer_con_ceda {
+.timer4_con {
     background: -webkit-linear-gradient(left, rgb(250, 86, 86) 50%, #eee 50%);
     border-radius: 100%;
     height: 250px;
@@ -237,7 +269,7 @@ button:disabled {
     top: 0;
     width: 50%;
     animation-name: mask1p;
-    animation-duration: 60s;
+    animation-duration: 90s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     -webkit-transform-origin: 100% 50%;
@@ -251,35 +283,35 @@ button:disabled {
     top: 0;
     width: 50%;
     animation-name: mask1c;
-    animation-duration: 60s;
+    animation-duration: 90s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     -webkit-transform-origin: 100% 50%;
     animation-play-state: paused;
 }
-.mask2p {
+.mask6p {
     border-radius: 100% 0 0 100% / 50% 0 0 50%;
     height: 100%;
     left: 0;
     position: absolute;
     top: 0;
     width: 50%;
-    animation-name: mask2p;
-    animation-duration: 120s;
+    animation-name: mask6p;
+    animation-duration: 360s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     -webkit-transform-origin: 100% 50%;
     animation-play-state: paused;
 }
-.mask2c {
+.mask6c {
     border-radius: 100% 0 0 100% / 50% 0 0 50%;
     height: 100%;
     left: 0;
     position: absolute;
     top: 0;
     width: 50%;
-    animation-name: mask2c;
-    animation-duration: 120s;
+    animation-name: mask6c;
+    animation-duration: 360s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     -webkit-transform-origin: 100% 50%;
@@ -341,20 +373,35 @@ button:disabled {
     -webkit-transform-origin: 100% 50%;
     animation-play-state: paused;
 }
-.mask2n {
+.mask3n {
     border-radius: 100% 0 0 100% / 50% 0 0 50%;
     height: 100%;
     left: 0;
     position: absolute;
     top: 0;
     width: 50%;
-    animation-name: mask2n;
-    animation-duration: 120s;
+    animation-name: mask3n;
+    animation-duration: 180s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     -webkit-transform-origin: 100% 50%;
     animation-play-state: paused;
 }
+.mask49n {
+    border-radius: 100% 0 0 100% / 50% 0 0 50%;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 50%;
+    animation-name: mask49n;
+    animation-duration: 2940s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -webkit-transform-origin: 100% 50%;
+    animation-play-state: paused;
+}
+
 
 @-webkit-keyframes time {
     100% {
@@ -380,7 +427,7 @@ button:disabled {
         -webkit-transform: rotate(-180deg);
     }
 }
-@-webkit-keyframes mask2p {
+@-webkit-keyframes mask6p {
     0% {
         background: #eee;
         -webkit-transform: rotate(0deg);
@@ -418,7 +465,7 @@ button:disabled {
     }
 }
 
-@-webkit-keyframes mask2c {
+@-webkit-keyframes mask6c {
     0% {
         background: #eee;
         -webkit-transform: rotate(0deg);
@@ -511,7 +558,25 @@ button:disabled {
         -webkit-transform: rotate(-180deg);
     }
 }
-@-webkit-keyframes mask2n {
+@-webkit-keyframes mask3n {
+    0% {
+        background: #eee;
+        -webkit-transform: rotate(0deg);
+    }
+    50% {
+        background: #eee;
+        -webkit-transform: rotate(-180deg);
+    }
+    50.01% {
+        background: rgb(178, 178, 178);
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        background: rgb(178, 178, 178);
+        -webkit-transform: rotate(-180deg);
+    }
+}
+@-webkit-keyframes mask49n {
     0% {
         background: #eee;
         -webkit-transform: rotate(0deg);
