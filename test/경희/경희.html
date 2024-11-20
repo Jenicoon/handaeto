@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이감</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>  
+    <div class="header">
+        <img src="../../학교로고/경희.png" alt="Logo" class="logo">
+        <h1>토론을 골라주세요</h1>
+    </div>
+
+    <div class="container">
+        <div class="choice 반토막" id="choice_반토막" onclick="location.href='ceda1.html';">
+            <div class="title">NOGOTTE-CEDA</div>
+        </div>
+        <div class="choice CEDA" id="choice_CEDA" onclick="location.href='debate1-1.html';">
+            <div class="title">자유토론</div>
+        </div>
+    </div>
+    
+
+    <button onclick="previous()">메인으로</button>
+
+    <script>
+        function previous() {
+            window.location.href = '../debate_main.html';
+        }
+    </script>
+</body>
+</html>
