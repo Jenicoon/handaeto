@@ -1,4 +1,4 @@
-let timePro = 49 * 60;
+let timePro = 90 * 60;
 let timerInterval;
 let runningPro = false;
 
@@ -41,7 +41,7 @@ function stopTimer() {
 
 function resetTimer() {
     stopTimer();
-    timePro = 49 * 60;
+    timePro = 90 * 60;
     updateDisplay();
     const timerElement = document.getElementById('timer');
     const maskElement = document.querySelector('.mask49n');
