@@ -184,7 +184,7 @@ button:disabled {
     position: relative;
     width: 250px;
     animation-name: time;
-    animation-duration: 2940s;
+    animation-duration: 5400s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-play-state: paused;
@@ -395,7 +395,7 @@ button:disabled {
     top: 0;
     width: 50%;
     animation-name: mask49n;
-    animation-duration: 2940s;
+    animation-duration: 5400s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     -webkit-transform-origin: 100% 50%;
